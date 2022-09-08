@@ -81,6 +81,7 @@ const controller = {
   parseInput: function(input){
     if(started){
       if(model.playerCount % 2 !== 0){
+        view.displayMessage("Player 1's turn");
         view.displayPlayer(input,selectedPlayer);
          model.availableSlot.push("booked");
          if(input<3){model.input[0][input]= 1}
@@ -100,7 +101,8 @@ const controller = {
        }
        else{
        let player2 = selectedPlayer === model.possiblePlayers[0] ? model.possiblePlayers[1]: model.possiblePlayers[0];
-       view.displayPlayer(input,player2);
+       view.displayMessage("Player 2's turn")
+         view.displayPlayer(input,player2);
          model.availableSlot.push( "booked");
          if(input<3){model.input[0][input]= 10}
          else if(input<6){model.input[1][input-3] = 10}
