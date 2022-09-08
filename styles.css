@@ -2,7 +2,7 @@ body{
   background: url("images/tic-tac-toe.jpg") no-repeat;
   background-size:cover;
   border: 0;
-  background-origin: border-box;
+  /*background-origin: border-box;*/
   backdrop-filter: blur(5px);
 }
 
