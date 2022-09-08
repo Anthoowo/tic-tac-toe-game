@@ -1,0 +1,223 @@
+body{
+  background: url("images/tic-tac-toe.jpg") no-repeat;
+  background-size:cover;
+  border: 0;
+  background-origin: border-box;
+  backdrop-filter: blur(5px);
+}
+
+.blur{
+  backdrop-filter: blur(5px);
+  background-color: transparent;
+  filter: blur(10px);
+}
+
+h1{
+  margin: auto;
+  text-align: center;
+  color: #554994;
+  font-size: 3rem;
+  font-family: 'Rubik Moonrocks', cursive;
+}
+.container{
+  display: flex;
+  justify-content: space-around;
+}
+h3{
+  font-family: 'Titan One', cursive;
+  font-size: 1.5rem;
+  text-align: center;
+}
+p{
+  padding: 2%;
+  text-align: center;
+  margin: auto;
+  font-family: 'raleway', sans-serif;
+  font-size: 1.5rem;
+  font-weight: lighter;
+}
+
+.buttons button{
+    margin: 2px 20px 10px 2px;
+  display: inline-flex;
+}
+.pressed{
+  box-shadow: 0 3px 4px 0px #DBEDF3;
+  opacity: 0.5;
+}
+
+.display-msg{
+  z-index: 1;
+  opacity: .8;
+  border-radius: 3%;
+  position: absolute;
+  top:0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  height: 40%;
+  width: 40%;
+  background: linear-gradient(#e66465, #9198e5);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px,
+                   rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.display-msg h2{
+  text-align: center;
+  font-family: 'Titan One', cursive;
+  color:  #554994;
+  cursor: pointer;
+  transition: .5s;
+  font-size: 1.5rem;
+  font-weight: lighter;
+}
+.display-msg h2:hover{
+  color: white;
+  text-shadow: 0 0 5px #03e9f4,
+              0 0 5px #03e9f4,
+              0 0 5px #03e9f4,
+              0 0 5px #03e9f4;
+}
+#board{
+  margin: 1% auto 3% auto;
+  background-color: #F29393;
+  width: 420px;
+  height: 480px;
+  display: grid;
+  align-items: center;
+  align-content: space-around;
+  grid-row-gap: 2%;
+  padding: 4%;
+  border-radius: 10%;
+}
+
+.container00{
+  width: 400px;
+  height: 450px;
+  background-color: #F29393;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows:  1fr 1fr 1fr;
+  grid-gap: 10px;
+
+}
+.box{
+  cursor: pointer;
+border-radius: 15%;
+background-color: #FFCCB3;
+}
+.reset{
+  background-color: #FFCCB3 !important;
+}
+
+.X{
+  background-image: url(images/x.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.O{
+  background-image: url(images/o.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+@media (max-width: 768px ) {
+  #board{
+    margin-top: 0;
+  transform: scale(.9);
+  }
+  .container00{
+    margin: auto;
+    transform: scale(.9);
+  }
+  .reset{
+    width: 15%;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* CSS */
+.button-56 {
+  align-items: center;
+  background-color: #fee6e3;
+  border: 2px solid #111;
+  border-radius: 8px;
+  box-sizing: border-box;
+  margin: auto;
+  color: #111;
+  cursor: pointer;
+  display: flex;
+  font-family: 'Titan One', cursive;
+  font-size: 16px;
+  height: 48px;
+  justify-content: center;
+  line-height: 24px;
+  max-width: 100%;
+  padding: 0 25px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-56:after {
+  background-color: #111;
+  border-radius: 8px;
+  content: "";
+  display: block;
+  height: 48px;
+  left: 0;
+  width: 100%;
+  position: absolute;
+  top: -2px;
+  transform: translate(8px, 8px);
+  transition: transform .2s ease-out;
+  z-index: -1;
+}
+
+.button-56:hover:after {
+  transform: translate(0, 0);
+}
+
+.button-56:active {
+  background-color: #ffdeda;
+  outline: 0;
+}
+
+.button-56:hover {
+  outline: 0;
+}
+
+@media (min-width: 768px) {
+  .button-56 {
+    padding: 0 40px;
+  }
+
+}
