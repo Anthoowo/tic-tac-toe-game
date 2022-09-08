@@ -1,9 +1,9 @@
 body{
+  
   background: url("images/tic-tac-toe.jpg") no-repeat;
   background-size:cover;
   border: 0;
   background-origin: border-box;
-
   backdrop-filter: blur(5px);
 }
 
@@ -127,7 +127,7 @@ background-color: #FFCCB3;
 }
 @media (max-width: 768px ) {
  body{
-  heigth: 60vh;
+  height: 60vh;
   }
   #board{
     margin-top: 0;
