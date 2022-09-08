@@ -1,5 +1,6 @@
 body{
-  
+  height: 100vh;
+  width: 100vw;
   background: url("images/tic-tac-toe.jpg") no-repeat;
   background-size:cover;
   border: 0;
@@ -126,9 +127,6 @@ background-color: #FFCCB3;
   background-repeat: no-repeat;
 }
 @media (max-width: 768px ) {
- body{
-  height: 60vh;
-  }
   #board{
     margin-top: 0;
   transform: scale(.9);
