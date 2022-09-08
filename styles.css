@@ -1,5 +1,5 @@
 body{
-  Width: 100vw;
+  height: 100vh;
   background: url("images/tic-tac-toe.jpg") no-repeat;
   background-size:cover;
   border: 0;
