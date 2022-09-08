@@ -101,7 +101,7 @@ const controller = {
        }
        else{
        let player2 = selectedPlayer === model.possiblePlayers[0] ? model.possiblePlayers[1]: model.possiblePlayers[0];
-       view.displayMessage("Player 2's turn")
+       view.displayMessage("Player 2's turn");
          view.displayPlayer(input,player2);
          model.availableSlot.push( "booked");
          if(input<3){model.input[0][input]= 10}
