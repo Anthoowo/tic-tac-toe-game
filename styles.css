@@ -124,7 +124,7 @@ background-color: #FFCCB3;
   background-size: contain;
   background-repeat: no-repeat;
 }
-@media (max-width: 768px ) {
+/*@media (max-width: 768px ) {
   #board{
     margin-top: 0;
   transform: scale(.9);
@@ -136,7 +136,7 @@ background-color: #FFCCB3;
   .reset{
     width: 15%;
   }
-}
+}*/
 
 
 
